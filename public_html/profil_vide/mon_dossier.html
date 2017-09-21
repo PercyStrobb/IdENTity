@@ -9,6 +9,14 @@ and open the template in the editor.
         <title>Mon dossier </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+        .scrollable {
+            max-width: 1028px;
+            max-height: 662px;
+            overflow-y: scroll;
+            overflow-x:hidden;
+        }
+        </style>
     </head>
     <body>
         <img src="images/template.png" alt="template" style="display:block;position:absolute;width:1280px;height:960px;" usemap="#template">
@@ -32,16 +40,16 @@ and open the template in the editor.
             <area shape="rect" coords="1101,424,1271,448" href="se_former.html" alt="moodle"/>
             <area shape="rect" coords="1101,451,1271,475" href="applications.html" alt="favoris"/>
         </map>
-         <img src="images/monDoss-coord.png" alt="template" style="display:block;position:absolute;left:35px;top:215px;width:1028px;height:661px;" usemap="#mondossiertmp">
-         <map name="mondossiertmp">
-             <area shape="rect" coords="95,185,195,210" href="mon_dossier.html" alt="coordonnées"/>
-             <area shape="rect" coords="195,185,285,210" href="mon_dossier_compte.html" alt="compte"/>
-             <area shape="rect" coords="285,185,420,210" href="mon_dossier_infos.html" alt="infospersonnelles"/>
-             <area shape="rect" coords="510,185,600,210" href="mon_dossier_moyennes.html" alt="moyennes"/>
-             <area shape="rect" coords="420,185,510,210" href="mon_dossier_examens.html" alt="examens"/>
-             <area shape="rect" coords="600,185,690,210" href="mon_dossier_scolarite.html" alt="scolarite"/>
-             
-         </map>
-        
+         <div class='scrollable' style='display:block;position:absolute;left:35px;top:215px;'>
+            <img src="images/monDoss-coord.png" alt="template" style="width:1028px;height:720px;" usemap="#mondossiertmp">
+            <map name="mondossiertmp">
+                <area shape="rect" coords="95,240,195,275" href="mon_dossier.html" alt="coordonnées"/>
+                <area shape="rect" coords="195,240,285,275" href="mon_dossier_compte.html" alt="compte"/>
+                <area shape="rect" coords="285,240,420,275" href="mon_dossier_infos.html" alt="infospersonnelles"/>
+                <area shape="rect" coords="510,240,600,275" href="mon_dossier_moyennes.html" alt="moyennes"/>
+                <area shape="rect" coords="420,240,510,275" href="mon_dossier_examens.html" alt="examens"/>
+                <area shape="rect" coords="600,240,690,275" href="mon_dossier_scolarite.html" alt="scolarite"/>
+            </map>
+        </div>
     </body>
 </html>
