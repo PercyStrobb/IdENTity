@@ -21,6 +21,9 @@ and open the template in the editor.
     <body>
         <img src="images/template.png" alt="template" style="display:block;position:absolute;width:1280px;height:960px;" usemap="#template">
         <map name="template">
+            <!--topbar :-->
+            <area shape="rect" coords="1170,0,1280,30" href="accueilnonconnecte.html" alt="deconnection"/>
+            
             <!--navbar :-->
             <area shape="rect" coords="227,113,335,136" href="accueil.html" alt="accueil"/>
             <area shape="rect" coords="343,113,529,136" href="bureau_numerique.html" alt="bureau numérique"/>
@@ -50,12 +53,11 @@ and open the template in the editor.
                 <area shape="rect" coords="420,240,510,275" href="mon_dossier_examens.html" alt="examens"/>
                 <area shape="rect" coords="600,240,690,275" href="mon_dossier_scolarite.html" alt="scolarite"/>
             </map>
-             <script>
+            <script>
              sessionStorage.setItem("Page","Examens");
-         </script>
-         <script src="scriptgame.js">            
-         </script>
-        
+            </script>
+            <script src="scriptgame.js">
+            </script>
         </div>
     </body>
 </html>

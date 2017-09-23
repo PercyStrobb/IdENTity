@@ -15,6 +15,7 @@ var pagevisitee=sessionStorage.getItem("Page");
  	}
  }
  if(pagevisitee=="Envoyes"){
+
  	if(nom==0){
  		document.write('<img src="images/templates/nom_prenom1/scout_template_interne_envoyes.png" alt="template" style="display:block;position:absolute;left:35px;top:215px;width:1028px;height:661px;"usemap="#bureautmp"');
  	}
