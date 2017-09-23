@@ -1,19 +1,19 @@
 //var nom=sessionStorage.getItem("Profil");
 //nom=parseInt(nom);
 var nom=1;
- var pagevisitee=sessionStorage.getItem("Page");
+var pagevisitee=sessionStorage.getItem("Page");
  
- if (pagevisitee=="Reception"){
- 	if(nom==0){
- 		document.write('<img src="images/templates/nom_prenom1/scout_template_interne.png" alt="template" style="display:block;position:absolute;left:35px;top:215px;width:1028px;height:661px;"usemap="#bureautmp"');
- 	}
- 	if(nom==1){
- 		document.write('<img src="images/templates/nom_prenom2/scout_template_interne.png" alt="template" style="display:block;position:absolute;left:35px;top:215px;width:1028px;height:661px;"usemap="#bureautmp"');
- 	}
- 	if(nom==2){
- 		document.write('<img src="images/templates/nom_prenom3/scout_template_interne.png" alt="template" style="display:block;position:absolute;left:35px;top:215px;width:1028px;height:661px;"usemap="#bureautmp"');
- 	}
- }
+if (pagevisitee=="Reception"){
+    if(nom==0){
+        document.write('<img src="images/templates/nom_prenom1/scout_template_interne.png" alt="template" style="display:block;position:absolute;left:35px;top:215px;width:1028px;height:661px;"usemap="#bureautmp"');
+    }
+    if(nom==1){
+ 	document.write('<img src="images/templates/nom_prenom2/scout_template_interne.png" alt="template" style="display:block;position:absolute;left:35px;top:215px;width:1028px;height:661px;"usemap="#bureautmp"');
+    }
+    if(nom==2){
+        document.write('<img src="images/templates/nom_prenom3/scout_template_interne.png" alt="template" style="display:block;position:absolute;left:35px;top:215px;width:1028px;height:661px;"usemap="#bureautmp"');
+    }
+}
  else if(pagevisitee=="Envoyes"){
  	if(nom==0){
  		document.write('<img src="images/templates/nom_prenom1/scout_template_interne_envoyes.png" alt="template" style="display:block;position:absolute;left:35px;top:215px;width:1028px;height:661px;"usemap="#bureautmp"');
