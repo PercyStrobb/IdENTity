@@ -15,11 +15,20 @@ and open the template in the editor.
         <map name="login">
             <area shape="rect" coords="60,330,200,370" href="accueil.html" alt="Accueil" />
         </map>
-        <form style="position:absolute;left:75px;top:176px;width:200px;height:100px">
-            <p><input type="text" name="identifiant"/></p>
+        <form name="Profil" id="Profil" method="post" >
+            <p><input type="text" name="identifiant" id="id" style="position:absolute;left:75px;top:199px;width:167px;height:20px" onchange="profilChanged()"/></p>
+            <p><input type="password" name="motdepasse" style="position:absolute;left:75px;top:253px;width:167px;height:20px"/></p>
+            <!--<div class="button" style="position:absolute;left:73px;top:360px;">
+                <button type="submit">SE CONNECTER</button>
+            </div>-->
         </form>
-        <form style="position:absolute;left:75px;top:231px;width:200px;height:100px">
-            <p><input type="password" name="motdepasse"/></p>
-        </form>
+        <script>
+            sessionStorage.setItem("Profil", document.forms["Profil"].elements["identifiant"].value);
+            console.log(document.forms["Profil"].elements["identifiant"].value);
+            function profilChanged(){
+                sessionStorage.setItem("Profil", document.forms["Profil"].elements["identifiant"].value);
+                console.log(document.forms["Profil"].elements["identifiant"].value);
+            }
+        </script>
     </body>
 </html>

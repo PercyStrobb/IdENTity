@@ -1,6 +1,6 @@
-//var nom=sessionStorage.getItem("Profil");
-//nom=parseInt(nom);
-var nom=1;
+var nom=sessionStorage.getItem("Profil");
+nom=parseInt(nom);
+//var nom=1;
 var pagevisitee=sessionStorage.getItem("Page");
  
  if (pagevisitee=="Reception"){
