@@ -6,6 +6,8 @@ var nom=sessionStorage.getItem("Profil");
 nom=profilMap.get(nom);
 //var nom=1;
 var pagevisitee=sessionStorage.getItem("Page");
+
+
  
  if (pagevisitee=="Reception"){
  	if(nom==0){
