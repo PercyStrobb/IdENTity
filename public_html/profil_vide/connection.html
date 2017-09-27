@@ -11,9 +11,21 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <img src="images/log-in.png" alt="login" style="display:block;position:absolute;width:1280px;height:960px;" usemap="#login">
+        <script src="menace.js">
+        </script>
+        <img src="images/log-in.png" alt="login" style="display:block;position:absolute;width:843px;height:448px;" usemap="#login">
         <map name="login">
-            <area shape="rect" coords="0,0,500,500" href="images/accueil.html" alt="Accueil" />
+            <area shape="rect" coords="60,330,200,370" href="accueil.html" alt="Accueil" />
         </map>
+        <form name="Profil" id="Profil" method="post" >
+            <p><input type="text" name="identifiant" id="id" style="position:absolute;left:75px;top:199px;width:167px;height:20px" onchange="profilChanged()"/></p>
+            <p><input type="password" name="motdepasse" style="position:absolute;left:75px;top:253px;width:167px;height:20px"/></p>
+        </form>
+        <script>
+            function profilChanged(){
+                sessionStorage.setItem("Profil", document.forms["Profil"].elements["identifiant"].value);
+                document.forms["Profil"].elements["motdepasse"].value = "00000000";
+            }
+        </script>
     </body>
 </html>

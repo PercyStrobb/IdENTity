@@ -1,7 +1,13 @@
-//var nom=sessionStorage.getItem("Profil");
-//nom=parseInt(nom);
-var nom=1;
+var profilMap = new Map();
+profilMap.set("tludik", 0);
+profilMap.set("jbonet", 1);
+profilMap.set("ldelrous", 2);
+var nom=sessionStorage.getItem("Profil");
+nom=profilMap.get(nom);
+//var nom=1;
 var pagevisitee=sessionStorage.getItem("Page");
+
+
  
  if (pagevisitee=="Reception"){
  	if(nom==0){
@@ -119,7 +125,7 @@ if(pagevisitee=="Moyennes"){
  	document.write('<img src="images/templates/nom_prenom2/template_monDoss-moyennes.png" alt="template" style="position:absolute;width:1028px;height:1006px;display:block;left:0px;top:0px;" usemap="#mondossiertmp"');
  	}
  	if(nom==2){
- 	document.write('<img src="images/templates/nom_prenom3/template_monDoss-moyennes.png" alt="template" style="position:absolute;width:1028px;height:1006px;display:block;left:0px;top:0x;" usemap="#mondossiertmp"');
+ 	document.write('<img src="images/templates/nom_prenom3/template_monDoss-moyennes.png" alt="template" style="position:absolute;width:1028px;height:1006px;display:block;left:0px;top:0px;" usemap="#mondossiertmp"');
  
  	}
  }

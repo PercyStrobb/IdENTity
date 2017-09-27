@@ -5,12 +5,15 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
+    
     <head>
         <title>Mon dossier </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <script src="menace.js">
+        </script>
         <img src="images/template.png" alt="template" style="display:block;position:absolute;width:1280px;height:960px;" usemap="#template">
         <map name="template">
             <!--topbar :-->
@@ -45,9 +48,12 @@ and open the template in the editor.
          </map>
          <script>
              sessionStorage.setItem("Page","Reception");
+             sessionStorage.setItem("Menace", "50");
+             var menacejauge=sessionStorage.getItem("Menace"); 
          </script>
          <script src="scriptgame.js">            
          </script>
+        
         
     </body>
 </html>
