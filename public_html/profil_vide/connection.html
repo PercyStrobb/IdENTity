@@ -18,16 +18,11 @@ and open the template in the editor.
         <form name="Profil" id="Profil" method="post" >
             <p><input type="text" name="identifiant" id="id" style="position:absolute;left:75px;top:199px;width:167px;height:20px" onchange="profilChanged()"/></p>
             <p><input type="password" name="motdepasse" style="position:absolute;left:75px;top:253px;width:167px;height:20px"/></p>
-            <!--<div class="button" style="position:absolute;left:73px;top:360px;">
-                <button type="submit">SE CONNECTER</button>
-            </div>-->
         </form>
         <script>
-            sessionStorage.setItem("Profil", document.forms["Profil"].elements["identifiant"].value);
-            console.log(document.forms["Profil"].elements["identifiant"].value);
             function profilChanged(){
                 sessionStorage.setItem("Profil", document.forms["Profil"].elements["identifiant"].value);
-                console.log(document.forms["Profil"].elements["identifiant"].value);
+                document.forms["Profil"].elements["motdepasse"].value = "00000000";
             }
         </script>
     </body>
