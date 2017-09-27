@@ -29,7 +29,6 @@ if (pagevisitee=="Documents"){
         document.write('<img src="images/templates/nom_prenom1/template_connecté-mesImpr.png" alt="mesimpr" style="display:block;position:absolute;width:609px;height:498px;left:490px;top:200px;">');
         document.write('<img src="images/templates/nom_prenom1/template_connecté-mesDocs.png" alt="mesdocs" style="display:block;position:absolute;width:408px;height:664px;top:200px;left:50px;" >');
         document.write('<div style="top:150px;left:150px;z-index:8;"><meter min="0" max="100" value="50">50 places</meter></div>');
-
     }
     if(nom==1){
 	document.write('<img src="images/templates/nom_prenom2/template_connecté-mesImpr.png" alt="mesimpr2" style="display:block;position:absolute;width:609px;height:498px;left:490px;top:200px;">');
