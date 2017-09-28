@@ -8,6 +8,18 @@ nom=profilMap.get(nom);
 var pagevisitee=sessionStorage.getItem("Page");
 var menace;
 
+var pagevisitee=sessionStorage.getItem("Page");
+var listepage=" "+sessionStorage.getItem("Liste")+" "+pagevisitee+" en temps que "+sessionStorage.getItem("Profil");
+sessionStorage.setItem("Liste",listepage);
+
+if (nom==3){
+    console.log("Le joueur a précédement visité les pages:"+listepage);
+}
+if (sessionStorage.getItem("End")=="True"){
+    console.log("Le joueur a perdu, sa jauge de menace est pleine. Page ayant causé la défaite:"+pagevisitee);
+    console.log("Le joueur a précédement visité les pages:"+listepage);
+}
+
 
 if (pagevisitee=="Documents"){
         if(nom==0){
@@ -35,6 +47,9 @@ if (pagevisitee=="Documents"){
         localStorage.setItem("Menace","0");
         document.write('<img src="images/templates/nom_prenom1/template_connecté-mesImpr.png" alt="mesimpr" style="display:block;position:absolute;width:609px;height:498px;left:490px;top:200px;">');
         document.write('<img src="images/templates/nom_prenom1/template_connecté-mesDocs.png" alt="mesdocs" style="display:block;position:absolute;width:408px;height:664px;top:200px;left:50px;" >');
+        localStorage.setItem("Menace","0");
+        sessionStorage.setItem("Liste","Debut du jeu");
+        alert("Le hacker n'a pas l'air de te surveiller pour l'instant... profite en pour fouiller et découvrir les différents services, tu en auras besoin!");
 
     }
     if(nom==1){
