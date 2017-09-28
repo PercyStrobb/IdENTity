@@ -6,7 +6,20 @@ var nom=sessionStorage.getItem("Profil");
 nom=profilMap.get(nom);
 //var nom=1;
 var pagevisitee=sessionStorage.getItem("Page");
+var menace;
 
+var pagevisitee=sessionStorage.getItem("Page");
+var listepage=" "+sessionStorage.getItem("Liste")+" "+pagevisitee+" en temps que "+sessionStorage.getItem("Profil");
+sessionStorage.setItem("Liste",listepage);
+
+ if (nom==3){
+console.log("Le joueur a précédement visité les pages:"+listepage);
+ }
+ if (sessionStorage.getItem("End")=="True"){
+    console.log("Le joueur a perdu, sa jauge de menace est pleine. Page ayant causé la défaite:"+pagevisitee);
+    console.log("Le joueur a précédement visité les pages:"+listepage);
+}
+ 
 
 if (pagevisitee=="Documents"){
         if(nom==0){
@@ -19,6 +32,11 @@ if (pagevisitee=="Documents"){
   
         }
         if(nom==2){
+        menace=localStorage.getItem("Menace");
+        menace=parseInt(menace);
+        localStorage.removeItem("Menace");
+        menace=menace+10;
+        localStorage.setItem("Menace",menace);
         document.write('<img src="images/templates/nom_prenom3/template_documents-mesEspaces.png" alt="docsPub3" style="display:block;position:absolute;left:35px;top:215px;width:501px;height:661px;" usemap="#docmespacestmp">');   
         document.write('<img src="images/templates/nom_prenom3/template_documents-docsPub.png" alt="docsMesEsp3" style="display:block;position:absolute;left:575px;top:215px;width:501px;height:661px;" usemap="#docpubtmp">');                   
                 
@@ -26,9 +44,12 @@ if (pagevisitee=="Documents"){
  }
  else if(pagevisitee=="Accueil"){
     if(nom==0){
+        localStorage.setItem("Menace","0");
+        sessionStorage.setItem("Liste","Debut du jeu");
+        alert("Le hacker n'a pas l'air de te surveiller pour l'instant... profite en pour fouiller et découvrir les différents services, tu en auras besoin!");
         document.write('<img src="images/templates/nom_prenom1/template_connecté-mesImpr.png" alt="mesimpr" style="display:block;position:absolute;width:609px;height:498px;left:490px;top:200px;">');
         document.write('<img src="images/templates/nom_prenom1/template_connecté-mesDocs.png" alt="mesdocs" style="display:block;position:absolute;width:408px;height:664px;top:200px;left:50px;" >');
-        document.write('<div style="top:150px;left:150px;z-index:8;"><meter min="0" max="100" value="50">50 places</meter></div>');
+
     }
     if(nom==1){
 	document.write('<img src="images/templates/nom_prenom2/template_connecté-mesImpr.png" alt="mesimpr2" style="display:block;position:absolute;width:609px;height:498px;left:490px;top:200px;">');
@@ -39,4 +60,42 @@ if (pagevisitee=="Documents"){
         document.write('<img src="images/templates/nom_prenom3/template_connecté-mesImpr.png" alt="mesimpr3" style="display:block;position:absolute;width:609px;height:498px;left:490px;top:200px;">');
         document.write('<img src="images/templates/nom_prenom3/template_connecté-mesDocs.png" alt="mesdocs3" style="display:block;position:absolute;width:408px;height:664px;top:200px;left:50px;">');
     }
+}
+else if(pagevisitee=="Fichiers"){
+    if(nom==1){
+        menace=localStorage.getItem("Menace");
+        menace=parseInt(menace);
+        localStorage.removeItem("Menace");
+        menace=menace+10;
+        localStorage.setItem("Menace",menace);
+
+    }
+    if(nom==2){
+        menace=localStorage.getItem("Menace");
+        menace=parseInt(menace);
+        localStorage.removeItem("Menace");
+        menace=menace+10;
+        localStorage.setItem("Menace",menace);
+
+    }
+
+}
+else if(pagevisitee=="Reunion"){
+    if(nom==1){
+        menace=localStorage.getItem("Menace");
+        menace=parseInt(menace);
+        localStorage.removeItem("Menace");
+        menace=menace+10;
+        localStorage.setItem("Menace",menace);
+
+    }
+    if(nom==2){
+        menace=localStorage.getItem("Menace");
+        menace=parseInt(menace);
+        localStorage.removeItem("Menace");
+        menace=menace+10;
+        localStorage.setItem("Menace",menace);
+        
+    }
+
 }
