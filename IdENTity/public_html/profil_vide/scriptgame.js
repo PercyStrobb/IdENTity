@@ -6,7 +6,9 @@ var nom=sessionStorage.getItem("Profil");
 nom=profilMap.get(nom);
 //var nom=1;
 var pagevisitee=sessionStorage.getItem("Page");
-
+var menace;
+menace=localStorage.getItem("Menace");
+console.log(menace);
 
  
  if (pagevisitee=="Reception"){
@@ -26,6 +28,11 @@ var pagevisitee=sessionStorage.getItem("Page");
  		document.write('<img src="images/templates/nom_prenom1/scout_template_interne_envoyes.png" alt="template" style="display:block;position:absolute;left:35px;top:215px;width:1028px;height:661px;"usemap="#bureautmp"');
  	}
  	if(nom==1){
+ 		menace=localStorage.getItem("Menace");
+ 		menace=parseInt(menace);
+ 		localStorage.removeItem("Menace");
+ 		menace=menace+10;
+ 		localStorage.setItem("Menace",menace);
  		document.write('<img src="images/templates/nom_prenom2/scout_template_interne_envoyes.png" alt="template" style="display:block;position:absolute;left:35px;top:215px;width:1028px;height:661px;"usemap="#bureautmp"');
  	}
  	if(nom==2){
@@ -37,6 +44,11 @@ if(pagevisitee=="Corbeille"){
  		document.write('<img src="images/templates/nom_prenom1/scout_template_interne_corbeille.png" alt="template" style="display:block;position:absolute;left:35px;top:215px;width:1028px;height:661px;"usemap="#bureautmp"');
  	}
  	if(nom==1){
+ 		menace=localStorage.getItem("Menace");
+ 		menace=parseInt(menace);
+ 		localStorage.removeItem("Menace");
+ 		menace=menace+10;
+ 		localStorage.setItem("Menace",menace);
  		document.write('<img src="images/templates/nom_prenom2/scout_template_interne_corbeille.png" alt="template" style="display:block;position:absolute;left:35px;top:215px;width:1028px;height:661px;"usemap="#bureautmp"');
  	}
  	if(nom==2){
@@ -49,6 +61,11 @@ if(pagevisitee=="Brouillons"){
  		document.write('<img src="images/templates/nom_prenom1/scout_template_interne_brouillons.png" alt="template" style="display:block;position:absolute;left:35px;top:215px;width:1028px;height:661px;"usemap="#bureautmp"');
  	}
  	if(nom==1){
+ 		menace=localStorage.getItem("Menace");
+ 		menace=parseInt(menace);
+ 		localStorage.removeItem("Menace");
+ 		menace=menace+10;
+ 		localStorage.setItem("Menace",menace);
  		document.write('<img src="images/templates/nom_prenom2/scout_template_interne_brouillons.png" alt="template" style="display:block;position:absolute;left:35px;top:215px;width:1028px;height:661px;"usemap="#bureautmp"');
  	}
  	if(nom==2){
@@ -60,9 +77,19 @@ if(pagevisitee=="ListesDiffusion"){
  		document.write('<img src="images/templates/nom_prenom1/template_applications-listes_de_diff.png" alt="template" style="display:block;position:absolute;left:35px;top:215px;width:1028px;height:287px;" usemap="#favoristmp"');
  	}
  	if(nom==1){
+ 		menace=localStorage.getItem("Menace");
+ 		menace=parseInt(menace);
+ 		localStorage.removeItem("Menace");
+ 		menace=menace+10;
+ 		localStorage.setItem("Menace",menace);
  		document.write('<img src="images/templates/nom_prenom2/template_applications-listes_de_diff.png" alt="template" style="display:block;position:absolute;left:35px;top:215px;width:1028px;height:287px;" usemap="#favoristmp"');
  	}
  	if(nom==2){
+ 		menace=localStorage.getItem("Menace");
+ 		menace=parseInt(menace);
+ 		localStorage.removeItem("Menace");
+ 		menace=menace+10;
+ 		localStorage.setItem("Menace",menace);
  		document.write('<img src="images/templates/nom_prenom3/template_applications-listes_de_diff.png" alt="template" style="display:block;position:absolute;left:35px;top:215px;width:1028px;height:287px;" usemap="#favoristmp"');
  	}
  
@@ -75,6 +102,11 @@ if(pagevisitee=="ListesDiffusion"){
  		document.write('<img src="images/templates/nom_prenom2/template_monDoss-coord.png" alt="template" style="position:absolute;display:block;left:0px;top:0px;width:1028px;height:720px;" usemap="#mondossiertmp"');
  	}
  	if(nom==2){
+ 		menace=localStorage.getItem("Menace");
+ 		menace=parseInt(menace);
+ 		localStorage.removeItem("Menace");
+ 		menace=menace+10;
+ 		localStorage.setItem("Menace",menace);
  		document.write('<img src="images/templates/nom_prenom3/template_monDoss-coord.png" alt="template" style="position:absolute;display:block;left:0px;top:0px;width:1028px;height:720px;	" usemap="#mondossiertmp"');
  	}
  }
@@ -87,6 +119,11 @@ if(pagevisitee=="Compte"){
  		document.write('<img src="images/templates/nom_prenom2/template_monDoss-compte.png" alt="template" style="position:absolute;width:1028px;height:664px;display:block;left:0px;top:0px;" usemap="#mondossiertmp"');
  	}
  	if(nom==2){
+ 		menace=localStorage.getItem("Menace");
+ 		menace=parseInt(menace);
+ 		localStorage.removeItem("Menace");
+ 		menace=menace+10;
+ 		localStorage.setItem("Menace",menace);
  		document.write('<img src="images/templates/nom_prenom3/template_monDoss-compte.png" alt="template" style="position:absolute;width:1028px;height:664px;display:block;left:0px;top:0px;" usemap="#mondossiertmp"');
  	}
  }
@@ -100,6 +137,11 @@ if(pagevisitee=="Examens"){
  
  	}
  	if(nom==2){
+ 		menace=localStorage.getItem("Menace");
+ 		menace=parseInt(menace);
+ 		localStorage.removeItem("Menace");
+ 		menace=menace+10;
+ 		localStorage.setItem("Menace",menace);
  		document.write('<img src="images/templates/nom_prenom3/template_monDoss-examens.png" alt="template" style="position:absolute;width:1028px;height:1389px;display:block;left:0px;top:0px;" usemap="#mondossiertmp"');
  
  	}
@@ -113,6 +155,11 @@ if(pagevisitee=="Infos"){
  		document.write('<img src="images/templates/nom_prenom2/template_monDoss-infos.png" alt="template" style="position:absolute;width:1028px;height:823px;display:block;left:0px;top:0px;" usemap="#mondossiertmp"');
  	}
  	if(nom==2){
+ 		menace=localStorage.getItem("Menace");
+ 		menace=parseInt(menace);
+ 		localStorage.removeItem("Menace");
+ 		menace=menace+10;
+ 		localStorage.setItem("Menace",menace);
  		document.write('<img src="images/templates/nom_prenom3/template_monDoss-infos.png" alt="template" style="position:absolute;width:1028px;height:823px;display:block;left:0x;top:0px;" usemap="#mondossiertmp"');
  	}
  }
@@ -125,6 +172,11 @@ if(pagevisitee=="Moyennes"){
  	document.write('<img src="images/templates/nom_prenom2/template_monDoss-moyennes.png" alt="template" style="position:absolute;width:1028px;height:1006px;display:block;left:0px;top:0px;" usemap="#mondossiertmp"');
  	}
  	if(nom==2){
+ 		menace=localStorage.getItem("Menace");
+ 		menace=parseInt(menace);
+ 		localStorage.removeItem("Menace");
+ 		menace=menace+10;
+ 		localStorage.setItem("Menace",menace);
  	document.write('<img src="images/templates/nom_prenom3/template_monDoss-moyennes.png" alt="template" style="position:absolute;width:1028px;height:1006px;display:block;left:0px;top:0px;" usemap="#mondossiertmp"');
  
  	}
@@ -137,6 +189,11 @@ if(pagevisitee=="Scolarite"){
  		document.write('<img src="images/templates/nom_prenom2/template_monDoss-scolarite.png" alt="template" style="position:absolute;width:1028px;height:661px;display:block;left:0px;top:0px;" usemap="#mondossiertmp"');
  	}
  	if(nom==2){
+ 		menace=localStorage.getItem("Menace");
+ 		menace=parseInt(menace);
+ 		localStorage.removeItem("Menace");
+ 		menace=menace+10;
+ 		localStorage.setItem("Menace",menace);
  		document.write('<img src="images/templates/nom_prenom3/template_monDoss-scolarite.png" alt="template" style="position:absolute;width:1028px;height:661px;display:block;left:0px;top:0px;" usemap="#mondossiertmp"');
  	}
  }
@@ -148,6 +205,11 @@ if(pagevisitee=="Scolarite"){
  		document.write('<img src="images/templates/nom_prenom2/template_se_former-moodle.png" alt="template" style="display:block;position:absolute;left:35px;top:215px;width:1028px;height:661px;" usemap="#seformertmp">');
  	}
  	if(nom==2){
+ 		menace=localStorage.getItem("Menace");
+ 		menace=parseInt(menace);
+ 		localStorage.removeItem("Menace");
+ 		menace=menace+10;
+ 		localStorage.setItem("Menace",menace);
  		document.write('<img src="images/templates/nom_prenom3/template_se_former-moodle.png" alt="template" style="display:block;position:absolute;left:35px;top:215px;width:1028px;height:661px;" usemap="#seformertmp">');
  	}
  }
